@@ -14,16 +14,16 @@ https://node-lms-api.herokuapp.com/
 #### Courses
 - /api/courses   --- method: POST --- description: creates a new course
 - /api/courses   --- method: GET --- description: Fetches all courses
-- /api/courses/course/:Id   --- method: GET --- description: fetches the course with the given id
-- /api/courses/course/:Id   --- method: PATCH --- description: update the course with the given id
-- /api/courses/course/:Id   --- method: DELETE --- description: delete the course with the given id
+- /api/courses/:Id   --- method: GET --- description: fetches the course with the given id
+- /api/courses/:Id   --- method: PATCH --- description: update the course with the given id
+- /api/courses/:Id   --- method: DELETE --- description: delete the course with the given id
 
 
 #### Students
 
 - /api/students   --- method: POST --- description: creates a new student
 - /api/students   --- method: GET --- description: Fetches all students
-- /api/students/student/:Id   --- method: GET --- description: fetches the student with the given id
-- /api/students/student/:Id   --- method: PATCH --- description: update the student with the given id
-- /api/students/student/:Id   --- method: DELETE --- description: delete the student with the given id
+- /api/students/:Id   --- method: GET --- description: fetches the student with the given id
+- /api/students/:Id   --- method: PATCH --- description: update the student with the given id
+- /api/students/:Id   --- method: DELETE --- description: delete the student with the given id
 
