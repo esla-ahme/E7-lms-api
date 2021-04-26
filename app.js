@@ -21,7 +21,7 @@ app.use(express.json());
 // for parsing application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-const PORT = process.env.Port || 3500
+const PORT = process.env.PORT || 3500
 
 //conect to db
 mongoose.connect(process.env.DB_URL,
