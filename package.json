@@ -1,6 +1,6 @@
 {
-  "name": "rest_api_men",
-  "version": "1.0.0",
+  "name": "lms-api",
+  "version": "1.23.01",
   "description": "REST api with NodeJs, ExpressJs and Mongodb",
   "main": "app.js",
   "scripts": {
