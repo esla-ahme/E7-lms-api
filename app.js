@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-require('dotenv/config');
 const mongoose = require('mongoose');
 
 const studentRoute = require('./routes/students');
@@ -15,7 +14,6 @@ app.use('/api/students', studentRoute);
 app.use('/api/courses', courseRoute);
 app.use('/web/courses/create', courseFormRoute)
 app.use('/web/students/create', studentFormRoute)
-
 app.use(express.json());
 
 
@@ -23,7 +21,7 @@ app.use(express.json());
 // for parsing application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-
+const PORT = process.env.PORT || 3500
 
 //conect to db
 mongoose.connect(process.env.DB_URL,
@@ -32,4 +30,4 @@ mongoose.connect(process.env.DB_URL,
         console.log("connected to db");
     })
 //Listen
-app.listen(3500);
+app.listen(PORT);
