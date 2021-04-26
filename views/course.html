@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <title>Add Course</title>
+</head>
+
+<body>
+
+  <body class="bg-white">
+    <!-- url('/img/hero-pattern.svg') -->
+    <div class="flex min-h-screen bg-white">
+
+      <div class="w-1/2 bg-cover md:block hidden"
+        style="background-image:  url(https://images.unsplash.com/photo-1518976024611-28bf4b48222e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1532&q=80)">
+      </div>
+      <!-- <div class="bg-no-repeat bg-right bg-cover max-w-max max-h-8 h-12 overflow-hidden">
+            <img src="log_in.webp" alt="hey">
+        </div> -->
+
+
+      <div class="md:w-1/2 max-w-lg mx-auto my-24 px-4 py-5 shadow-none">
+
+        <div class="text-left p-0 font-sans">
+
+          <h1 class=" text-gray-800 text-3xl font-medium">Add new course</h1>
+          <h3 class="p-1 text-gray-700">double check data before submitting...</h3>
+        </div>
+        <form action="/api/courses" method="POST" class="p-0">
+          <div class="mt-5">
+            <!-- <label for="email" class="sc-bqyKva ePvcBv">Email</label> -->
+            <input type="text" class="block w-full p-2 border rounded border-gray-300 
+              focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent " placeholder="Course name"
+              name="name" required minlength="5" />
+          </div>
+          <div class="mt-5">
+            <input type="text"
+              class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent "
+              placeholder="Code" required maxlength="6" minlength="6" name="code" />
+
+          </div>
+          <div class="mt-5">
+            <textarea aria-expanded="true" maxlength="200"
+              class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent  "
+              placeholder="description" name="description"></textarea>
+          </div>
+
+          <div class="mt-8">
+            <input type="submit" value="Add" class="py-3 bg-green-500 text-white w-full rounded hover:bg-green-600">
+          </div>
+        </form>
+
+      </div>
+
+
+    </div>
+  </body>
+
+
+
+
+
+
+</body>
+
+</html>
