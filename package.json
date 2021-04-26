@@ -11,6 +11,6 @@
   "dependencies": {
     "express": "*",
     "express-validator": "^6.10.1",
-    "mongoose-sequence": "^5.3.1",
+    "mongoose-sequence": "^5.3.1"
   }
 }
